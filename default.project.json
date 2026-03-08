@@ -1,0 +1,27 @@
+{
+  "name": "MyRobloxProject",
+  "tree": {
+    "$className": "DataModel",
+    "StarterGui": {
+      "$className": "StarterGui",
+      "Main": {
+        "$path": "src/StarterGui/Main.client.lua"
+      }
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$path": "src/ReplicatedStorage"
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "$path": "src/ServerScriptService"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "$path": "src/StarterPlayerScripts"
+      }
+    }
+  }
+}

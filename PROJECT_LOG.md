@@ -1,0 +1,46 @@
+## Project Feature Log
+
+### 1. Basic Rojo Structure
+- **Performance Impact**: Low  
+- **Security Verified**: N/A  
+- **Status**: ✅ Done  
+- **Notes**: `default.project.json` mapped for `StarterGui`, `ServerScriptService`, `ReplicatedStorage`, `StarterPlayer`.
+
+### 2. Core PMA Rules (.cursorrules)
+- **Performance Impact**: Low  
+- **Security Verified**: N/A  
+- **Status**: ✅ Done  
+- **Notes**: Global project rules for strict Luau, performance, memory, and security created.
+
+### 3. Welcome/Loading Scene (UI)
+- **Performance Impact**: Medium (UI Memory / Tweens)  
+- **Security Verified**: N/A  
+- **Status**: 🟡 In Progress  
+- **Notes**: `Main.client.lua` creates basic main menu UI; cần pass tối ưu + strict typing theo `.cursorrules`.
+
+### 4. Server Boot Strap (Main)
+- **Performance Impact**: Low  
+- **Security Verified**: N/A  
+- **Status**: 🟡 In Progress  
+- **Notes**: `init.server.lua` mới log startup; chưa gắn hệ thống game/server logic thực tế.
+
+### 5. Map Design
+- **Performance Impact**: High (RAM / DrawCalls)  
+- **Security Verified**: N/A  
+- **Status**: ⏳ Pending  
+- **Notes**: Chưa có world/level assets hoặc chiến lược StreamingEnabled/LOD.
+
+### 6. NPC Design
+- **Performance Impact**: Medium (CPU / Physics)  
+- **Security Verified**: N/A  
+- **Status**: ⏳ Pending  
+- **Notes**: Chưa có NPC logic, AI, hoặc pathfinding systems.
+
+---
+
+Format cho entry mới (giữ style này):
+- **Feature**: Tên tính năng
+- **Performance Impact**: Low / Medium / High (có thể ghi thêm chi tiết)
+- **Security Verified**: Y / N / N/A
+- **Status**: ✅ Done / 🟡 In Progress / ⏳ Pending
+- **Notes**: Ghi ngắn gọn về tiến độ, rủi ro performance, hạng mục cần làm tiếp.
