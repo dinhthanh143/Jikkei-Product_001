@@ -1,0 +1,13 @@
+{
+	"$schema": "https://raw.githubusercontent.com/JohnnyMorganz/luau-lsp/main/schemas/configuration.schema.json",
+	"diagnostics": {
+		"strict": true,
+		"roblox": true
+	},
+	"completion": {
+		"autocompleteVariants": true
+	},
+	"robloxLsp": {
+		"enabled": true
+	}
+}

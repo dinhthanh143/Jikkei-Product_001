@@ -12,9 +12,10 @@ alwaysApply: true
 - **Rojo Source of Truth**: Treat `default.project.json` (or the active `.project.json`) as the **only** source of truth for hierarchy. Do **not** assume Instances created manually in Studio.
 - **Hierarchy Targets**:
   - **Server**: `src/ServerScriptService/**` with `.server.lua` scripts.
-  - **Client**: `src/StarterPlayer/**` and `src/StarterGui/**` with `.client.lua` scripts.
+  - **Client**: `src/StarterPlayerScripts/**` and `src/StarterGui/**` with `.client.lua` scripts.
   - **Shared**: `src/ReplicatedStorage/**` for shared modules and types.
 - **New Files**: When suggesting or creating new scripts/modules, place them under the correct Rojo-mapped folder and with the correct suffix (`.server.lua`, `.client.lua`, `.lua` for shared).
+- **Docs**: See `README.md` and `docs/ARCHITECTURE.md` for structure and conventions.
 
 ## Shared Module Usage
 - **Config**: Always import src/ReplicatedStorage/Shared/Config.lua for any constants (round time, currency, etc.). Never hardcode values.
@@ -107,7 +108,8 @@ alwaysApply: true
   - When the user is vague, make reasonable assumptions aligned with these rules and proceed; do not block waiting for clarification unless absolutely necessary.
 
 ## Context Files (always read these first)
-- CLAUDE.md — game overview, current state, naming conventions
 - PROJECT_LOG.md — what's done, in progress, and pending
+- CLAUDE.md — game overview, folder structure, current state, naming conventions
+- docs/ARCHITECTURE.md — hierarchy, data flow, security
 - src/ReplicatedStorage/Shared/Types.lua — all type definitions
 - src/ReplicatedStorage/Shared/Config.lua — all constants

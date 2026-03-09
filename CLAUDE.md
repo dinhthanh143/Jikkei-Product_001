@@ -2,7 +2,16 @@
 
 ## Game Overview
 
--RPG PVE COOP DUNGEON-CRAWLER ARCHETYPE (UPDATING)
+RPG PVE COOP dungeon-crawler (archetype, updating).
+
+## Folder Structure
+
+- `src/ReplicatedStorage/Shared/` — Config, Types, Janitor
+- `src/ReplicatedStorage/Events/` — RemoteEvents (runtime-created)
+- `src/ServerScriptService/Main/` — Bootstrap; `Systems/` — server systems
+- `src/StarterPlayerScripts/Systems/` — Client systems
+- `src/StarterGui/` — Main menu + `Components/` for reusable UI
+- `docs/ARCHITECTURE.md` — Hierarchy, data flow, conventions
 
 ## Current Systems
 

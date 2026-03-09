@@ -1,0 +1,29 @@
+# Rojo / Roblox
+*.rbxl
+*.rbxlx
+*.rbxlx.lock
+sourcemap.json
+
+# Luau / LSP (user overrides)
+.luarc.json.user
+.luaurc.user
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment / Secrets
+.env
+.env.local
+.env.*.local
+
+# Logs / Temp
+*.log
+tmp/
+temp/
