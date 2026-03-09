@@ -16,6 +16,13 @@ alwaysApply: true
   - **Shared**: `src/ReplicatedStorage/**` for shared modules and types.
 - **New Files**: When suggesting or creating new scripts/modules, place them under the correct Rojo-mapped folder and with the correct suffix (`.server.lua`, `.client.lua`, `.lua` for shared).
 
+## Shared Module Usage
+- **Config**: Always import src/ReplicatedStorage/Shared/Config.lua for any constants (round time, currency, etc.). Never hardcode values.
+- **Types**: Always import src/ReplicatedStorage/Shared/Types.lua for type aliases. Never redefine types locally if they already exist here.
+- **Janitor**: Always use src/ReplicatedStorage/Shared/Janitor.lua for connection and instance cleanup. Never manually disconnect without it.
+- **Events**: All RemoteEvents live under ReplicatedStorage/Events — always WaitForChild() from client side, always create on server boot in init.server.lua.
+- **CLAUDE.md**: Read this file for full project context before making architectural decisions.
+
 ## Luau Typing & Compilation
 - **Strictness**: All new Luau files MUST start with either `--!strict` or `--!optimize 2`. Prefer `--!strict` for gameplay/logic; use `--!optimize 2` for heavy, stable computation modules.
 - **Type Annotations**:
@@ -99,3 +106,8 @@ alwaysApply: true
 - **Assumptions**:
   - When the user is vague, make reasonable assumptions aligned with these rules and proceed; do not block waiting for clarification unless absolutely necessary.
 
+## Context Files (always read these first)
+- CLAUDE.md — game overview, current state, naming conventions
+- PROJECT_LOG.md — what's done, in progress, and pending
+- src/ReplicatedStorage/Shared/Types.lua — all type definitions
+- src/ReplicatedStorage/Shared/Config.lua — all constants

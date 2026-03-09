@@ -36,6 +36,27 @@
 - **Status**: ⏳ Pending  
 - **Notes**: Chưa có NPC logic, AI, hoặc pathfinding systems.
 
+### 7. Shared Module Scaffold
+- **Performance Impact**: Low  
+- **Security Verified**: N/A  
+- **Status**: ✅ Done  
+- **Notes**: Created Config.lua, Types.lua, Janitor.lua under ReplicatedStorage/Shared. Events folder scaffolded.  
+- **Date**: 2025-03-08
+
+### 8. Folder Structure Scaffold
+- **Performance Impact**: Low  
+- **Security Verified**: N/A  
+- **Status**: ✅ Done  
+- **Notes**: Created Systems/ folders for server and client. Created Components/ folder for StarterGui.  
+- **Date**: 2025-03-08
+
+### 9. CLAUDE.md AI Context File
+- **Performance Impact**: Low  
+- **Security Verified**: N/A  
+- **Status**: ✅ Done  
+- **Notes**: CLAUDE.md created at root so Claude.ai has full project context without re-explaining every session.  
+- **Date**: 2025-03-08
+
 ---
 
 Format cho entry mới (giữ style này):
